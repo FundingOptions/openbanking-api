@@ -8,7 +8,7 @@ Example
 -----
 
 ```
-from openbanking import OpenBankingApi
+from openbankingapi import OpenBankingApi
 
 api = OpenBankingApi(timeout=5)
 

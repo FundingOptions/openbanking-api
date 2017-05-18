@@ -19,7 +19,7 @@ class OpenBankingApi:
 
                 response = requests.get(url, timeout=self.timeout)
 
-                data.setdefault(participant['name'], []).append(response.json())
+                data[participant['name']] = response.json()
         return data
 
     def participants(self):
