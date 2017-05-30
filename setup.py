@@ -13,7 +13,7 @@ setup(
     description='Simple wrapper for openbanking',
     long_description=readme,
     author='Funding Options',
-    author_email='dev@fundingoptions.com',
+    author_email='techsupport@fundingoptions.com',
     url='',
     license=license,
     py_modules=['openbankingapi'],
