@@ -4,9 +4,6 @@ from setuptools import setup
 with open('README.md') as f:
     readme = f.read()
 
-with open('LICENSE') as f:
-    license = f.read()
-
 setup(
     name='openbankingapi',
     version='0.1.0',
@@ -14,8 +11,8 @@ setup(
     long_description=readme,
     author='Funding Options',
     author_email='techsupport@fundingoptions.com',
-    url='',
-    license=license,
+    url='https://github.com/FundingOptions/openbanking-api',
+    license='GPLv3',
     py_modules=['openbankingapi'],
     install_requires=['requests']
 )
