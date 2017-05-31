@@ -8,6 +8,13 @@ Currently implemented a simple wrapper around retrieving a list of banks and bus
 
 Currently only tested on Python 3.4
 
+Install
+------
+
+```
+pip install openbankingapi
+```
+
 Example
 -----
 
