@@ -18,6 +18,7 @@ class OpenBankingApi:
             response = requests.get(url, timeout=self.timeout)
 
             return response.json()
+        return {}
 
     def banks(self):
         response = requests.get(BANK_LIST_URL, timeout=self.timeout)
