@@ -1,6 +1,6 @@
 import requests
 
-BANK_LIST_URL = 'https://developer.openbanking.org.uk/open-data/participant-store/participant_store.json'
+BANK_LIST_URL = 'https://raw.githubusercontent.com/OpenBankingUK/opendata-api-spec-compiled/master/participant_store.json'
 
 
 class OpenBankingApi:
