@@ -6,7 +6,7 @@ with open('README.md') as f:
 
 setup(
     name='openbankingapi',
-    version='0.1.1',
+    version='0.1.2',
     description='Simple wrapper for openbanking',
     long_description=readme,
     author='Funding Options',
