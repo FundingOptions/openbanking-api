@@ -16,6 +16,7 @@ class OpenBankingApi:
                 endpoint
             )
 
+            # unfortunately the only way to tell banks apart is via the name string
             if bank['name'] == 'Bank of Ireland (UK)':
                 cert_path = pkg_resources.resource_filename('openbankingapi', 'resources/quovadis.pem')
                 response = requests.get(
