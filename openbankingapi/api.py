@@ -1,3 +1,4 @@
+import pkg_resources
 import requests
 
 BANK_LIST_URL = 'https://raw.githubusercontent.com/OpenBankingUK/opendata-api-spec-compiled/master/participant_store.json'
@@ -15,7 +16,14 @@ class OpenBankingApi:
                 endpoint
             )
 
-            response = requests.get(url, timeout=self.timeout)
+            if bank['name'] == 'Bank of Ireland (UK)':
+                cert_path = pkg_resources.resource_filename('openbankingapi', 'resources/quovadis.pem')
+                response = requests.get(
+                    url,
+                    timeout=self.timeout,
+                    verify=cert_path)
+            else:
+                response = requests.get(url, timeout=self.timeout)
 
             return response.json()
         return {}
