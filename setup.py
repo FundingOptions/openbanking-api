@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 with open('README.md') as f:
@@ -14,6 +14,6 @@ setup(
     author_email='techsupport@fundingoptions.com',
     url='https://github.com/FundingOptions/openbanking-api',
     license='GPLv3',
-    py_modules=['openbankingapi'],
+    packages=find_packages(),
     install_requires=['requests']
 )
